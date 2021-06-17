@@ -334,6 +334,9 @@ namespace Alphaxcore.Blockchain.Ethereum
                 case ParityChainType.Mainnet:
                     if(height >= EthereumConstants.ByzantiumHardForkHeight)
                         return EthereumConstants.ByzantiumBlockReward;
+                        
+                    if(height >= EthereumConstants.ConstantinopleHardForkHeight)
+                        return EthereumConstants.ConstantinopleReward;
 
                     return EthereumConstants.HomesteadBlockReward;
 
