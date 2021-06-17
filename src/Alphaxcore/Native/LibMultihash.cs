@@ -227,6 +227,9 @@ namespace Alphaxcore.Native
                 
         [DllImport("libmultihash", EntryPoint = "yespower_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern int yespower(byte* input, void* output, uint inputLength);
+        
+        [DllImport("libmultihash", EntryPoint = "yespower_arwn_export", CallingConvention = CallingConvention.Cdecl)]
+        public static extern int yespower_arwn(byte* input, void* output, uint inputLength);
 
         [DllImport("libmultihash", EntryPoint = "yespower_ic_export", CallingConvention = CallingConvention.Cdecl)]
         public static extern int yespower_ic(byte* input, void* output, uint inputLength);
