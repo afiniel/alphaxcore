@@ -437,6 +437,11 @@ extern "C" MODULE_API void yespower_ic_export(const char* input, char* output, u
     yespowerIC_hash(input, output, input_len);
 }
 
+extern "C" MODULE_API void yespower_arwn_export(const char* input, char* output, uint32_t input_len)
+{
+    yespowerARWN_hash(input, output, input_len);
+}
+
 extern "C" MODULE_API void yespower_iots_export(const char* input, char* output, uint32_t input_len)
 {
     yespowerIOTS_hash(input, output, input_len);
