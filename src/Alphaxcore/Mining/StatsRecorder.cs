@@ -319,11 +319,11 @@ namespace Alphaxcore.Mining
 
                     foreach(var item in orphanedHashrateForMinerWorker)
                     {
-                        var parts = item.Split(":");
+                        var parts = item.Split(".");
                         var miner = parts[0];
                         var worker = parts.Length > 1 ? parts[1] : "0";
 
-                        stats.Miner = parts[0];
+                        stats.Miner = miner;
                         stats.Worker = worker;
 
                         // persist
