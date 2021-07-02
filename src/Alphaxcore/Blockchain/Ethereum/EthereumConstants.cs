@@ -56,12 +56,12 @@ namespace Alphaxcore.Blockchain.Ethereum
 
         public const ulong ByzantiumHardForkHeight = 4370000;
         public const ulong  ConstantinopleHardForkHeight = 7280000;
-        public const decimal HomesteadBlockReward = 5.0m;
-        public const decimal ByzantiumBlockReward = 3.0m;
+        public const decimal HomesteadBlockReward = 2.0m;
+        public const decimal ByzantiumBlockReward = 2.0m;
         public const decimal ConstantinopleReward = 2.0m;
-        public const decimal TestnetBlockReward = 3.0m;
-        public const decimal ExpanseBlockReward = 8.0m;
-        public const decimal EllaismBlockReward = 5.0m;
+        public const decimal TestnetBlockReward = 2.0m;
+        public const decimal ExpanseBlockReward = 2.0m;
+        public const decimal EllaismBlockReward = 2.0m;
         public const decimal JoysBlockReward = 2.0m;
 
 
@@ -70,7 +70,7 @@ namespace Alphaxcore.Blockchain.Ethereum
 
     public class EthereumClassicConstants
     {
-        public const decimal BaseRewardInitial = 5;
+        public const decimal BaseRewardInitial = 5m;
         public const decimal BasePercent = 0.8m;
         public const int BlockPerEra = 5000000;
         public const decimal UnclePercent = 0.03125m;
@@ -78,7 +78,7 @@ namespace Alphaxcore.Blockchain.Ethereum
 
     public class CallistoConstants
     {
-        public const decimal BaseRewardInitial = 600;
+        public const decimal BaseRewardInitial = 600m;
         public const decimal TreasuryPercent = 0.3m;
     }
 
@@ -111,7 +111,7 @@ namespace Alphaxcore.Blockchain.Ethereum
         Callisto,
         Joys,
 
-        Unknown = -1,
+        Unknown = 1,
     }
 
     public static class EthCommands
