@@ -179,6 +179,27 @@
         "explorerTxLink": "http://insight.auroracoin.is/tx/{0}",
         "explorerAccountLink": "http://insight.auroracoin.is/address/{0}"
     },
+     "australia-cash": {
+        "name": "Australia Cash",
+        "canonicalName": "Australia Cash",
+        "symbol": "AUS",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [ 1024, 1 ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://openchains.info/coin/australiacash/block/$height$",
+        "explorerTxLink": "https://openchains.info/coin/australiacash/tx/{0}",
+        "explorerAccountLink": "https://openchains.info/coin/australiacash/address/{0}"
+    },
     "bitcoin": {
         "name": "Bitcoin",
         "symbol": "BTC",
