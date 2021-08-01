@@ -290,7 +290,25 @@
         "explorerTxLink": "https://bsv.tokenview.com/tx/{0}",
         "explorerAccountLink": "https://bsv.tokenview.com/address/{0}"
     },
-    "browncoin": {
+        "bitflate": {
+        "name": "Bitflate",
+        "symbol": "BFL",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "https://explorer.bitflate.org/block/$hash$",
+        "explorerTxLink": "https://explorer.bitflate.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.bitflate.org/address/{0}"
+    },
+        "browncoin": {
         "name": "Browncoin",
         "symbol": "BRWN",
         "family": "bitcoin",
@@ -584,7 +602,7 @@
         "explorerTxLink": "http://block.elicoin.net/?page=tx&id={0}",
         "explorerAccountLink": "http://block.elicoin.net/?page=search&id={0}"
     },
-    "emark": {
+        "emark": {
         "name": "Deutsche eMark",
         "symbol": "DEM",
         "family": "bitcoin",
@@ -603,6 +621,26 @@
         "explorerBlockLink": "http://46.232.249.107:3009/block/$hash$",
         "explorerTxLink": "http://46.232.249.107:3009/tx/{0}",
         "explorerAccountLink": "http://46.232.249.107:3009/address/{0}"
+    },
+        "exosis": {
+        "name": "Exosis",
+        "symbol": "EXO",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x16r"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x16r" } ]
+        },
+        "shareMultiplier": 256,
+        "hasMasterNodes": true,
+        "explorerBlockLink": "https://www.blockseek.io/exo/block/$height$",
+        "explorerTxLink": "https://www.blockseek.io/exo/tx/{0}",
+        "explorerAccountLink": "https://www.blockseek.io/exo/address/{0}"
     },
     "fanaticos-cash": {
         "name": "Fanaticos Cash",
@@ -706,6 +744,30 @@
         "explorerBlockLink": "http://network.flo.cash/block/$hash$",
         "explorerTxLink": "http://network.flo.cash/tx/{0}",
         "explorerAccountLink": "http://network.flo.cash/address/{0}"
+    },
+     "foxdcoin": {
+        "name": "FoxDcoin",
+        "canonicalName": "FoxDcoin",
+        "symbol": "FOXD",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x16rv2"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x16rv2" } ]
+        },
+        "posBlockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x16rv2" } ]
+        },
+        "shareMultiplier": 4096,
+        "explorerBlockLink": "https://explorer.foxdcoin.com/block-height/$height$",
+        "explorerTxLink": "https://explorer.foxdcoin.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.foxdcoin.com/address/{0}"
     },
     "freecash": {
         "name": "Free Cash",
@@ -954,6 +1016,26 @@
         "explorerTxLink": "https://chainz.cryptoid.info/lcc/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/lcc/address.dws?{0}.htm"
     },
+    "litecoin-finance": {
+        "name": "Litecoin Finance",
+        "canonicalName": "Litecoin Finance",
+        "symbol": "LTFN",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yespowerr16"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://openchains.info/coin/ltfn/block/$height$",
+        "explorerTxLink": "https://openchains.info/coin/ltfn/tx/{0}",
+        "explorerAccountLink": "https://openchains.info/coin/ltfn/address/{0}"
+    },
     "luckybit": {
         "name": "LuckyBit",
         "symbol": "LUCKY",
@@ -998,6 +1080,27 @@
         "explorerBlockLink": "https://mgpc.explorer.alphax.pro/block/$hash$",
         "explorerTxLink": "https://mgpc.explorer.alphax.pro/tx/{0}",
         "explorerAccountLink": "https://mgpc.explorer.alphax.pro/address/{0}"
+    },
+    "mincoin": {
+        "name": "Mincoin",
+        "canonicalName": "Mincoin",
+        "symbol": "MNC",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "scrypt",
+            "args": [ 1024, 1 ]
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://chainz.cryptoid.info/mnc/block.dws?$height$.htm",
+        "explorerTxLink": "https://chainz.cryptoid.info/mnc/tx.dws?{0}.htm",
+        "explorerAccountLink": "https://chainz.cryptoid.info/mnc/address.dws?{0}.htm"
     },
     "monacoin": {
         "name": "Monacoin",
@@ -1169,6 +1272,25 @@
         "explorerTxLink": "https://chainz.cryptoid.info/ppc/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/ppc/address.dws?{0}.htm"
     },
+    "picacoin": {
+        "name": "Picacoin",
+        "canonicalName": "Picacoin",
+        "symbol": "PIC",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "http://explorer.picacoin.org/block/$hash$",
+        "explorerTxLink": "http://explorer.picacoin.org/tx/{0}",
+        "explorerAccountLink": "http://explorer.picacoin.org/address/{0}"
+     },
     "pigeoncoin": {
         "name": "Pigeoncoin",
         "symbol": "PGN",
@@ -1792,6 +1914,25 @@
         "explorerTxLink": "https://chainz.cryptoid.info/via/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/via/address.dws?{0}.htm"
     },
+    "widecoin": {
+        "name": "Widecoin",
+        "canonicalName": "Widecoin",
+        "symbol": "WCN",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "http://explorer.widecoin.org/block-height/$height$",
+        "explorerTxLink": "http://explorer.widecoin.org/tx/{0}",
+        "explorerAccountLink": "http://explorer.widecoin.org/address/{0}"    
+    },
     "xazab": {
         "name": "Xazab",
         "symbol": "XAZAB",
@@ -1849,6 +1990,25 @@
         "explorerBlockLink": "https://explorer.zentoshi.com/block/$hash$",
         "explorerTxLink": "https://explorer.zentoshi.com/tx/{0}",
         "explorerAccountLink": "https://explorer.zentoshi.com/address/{0}"
+    },
+    "zetacoin": {
+        "name": "Zetacoin",
+        "canonicalName": "Zetacoin",
+        "symbol": "ZET",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "explorerBlockLink": "https://chainz.cryptoid.info/zet/block.dws?$height$.htm",
+        "explorerTxLink": "https://chainz.cryptoid.info/zet/tx.dws?{0}.htm",
+        "explorerAccountLink": "https://chainz.cryptoid.info/zet/address.dws?{0}.htm"
     },
     "zcash": {
         "name": "ZCash",
