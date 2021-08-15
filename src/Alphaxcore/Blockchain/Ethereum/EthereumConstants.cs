@@ -56,9 +56,9 @@ namespace Alphaxcore.Blockchain.Ethereum
 
         public const ulong ByzantiumHardForkHeight = 4370000;
         public const ulong  ConstantinopleHardForkHeight = 7280000;
-        public const decimal HomesteadBlockReward = 2.0m;
-        public const decimal ByzantiumBlockReward = 2.0m;
-        public const decimal ConstantinopleReward = 2.0m;
+        public const decimal HomesteadBlockReward = 5.0m;
+        public const decimal ByzantiumBlockReward = 3.0m;
+        public const decimal ConstantinopleBlockReward = 2.0m;
         public const decimal TestnetBlockReward = 2.0m;
         public const decimal ExpanseBlockReward = 2.0m;
         public const decimal EllaismBlockReward = 2.0m;
