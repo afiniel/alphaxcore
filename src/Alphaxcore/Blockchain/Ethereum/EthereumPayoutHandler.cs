@@ -336,7 +336,7 @@ namespace Alphaxcore.Blockchain.Ethereum
                         return EthereumConstants.ByzantiumBlockReward;
                         
                     if(height >= EthereumConstants.ConstantinopleHardForkHeight)
-                        return EthereumConstants.ConstantinopleReward;
+                        return EthereumConstants.ConstantinopleBlockReward;
 
                     return EthereumConstants.HomesteadBlockReward;
 
