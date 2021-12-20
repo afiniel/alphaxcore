@@ -2641,4 +2641,22 @@
         "explorerTxLink": "https://explorer.joys.digital/transaction/{0}",
         "explorerAccountLink": "https://explorer.joys.digital/account/{0}"
     }
-}
+    "photonicbitcoin": {
+        "name": "PhotonicBitcoin",
+        "symbol": "PBTC",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "heavyhash"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "heavyhash" } ]
+        },
+        "explorerBlockLink": "https://explorer.powx.org/block/$hash$",
+        "explorerTxLink": "https://explorer.photonicbitcoin.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.photonicbitcoin.com/address/{0}"
+        
+}   
